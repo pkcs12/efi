@@ -1,5 +1,6 @@
 package efi
 
+// EnvironmentType represents type of Environment
 type EnvironmentType string
 
 // EnvironmentType constants
