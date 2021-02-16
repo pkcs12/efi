@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// Date represents a date with time
+// Date represents a date without time component
 type Date time.Time
 
 // MarshalXMLAttr allows to generate "2006-01-02" format instead of RFC3339
@@ -16,7 +16,7 @@ func (d Date) MarshalXMLAttr(name xml.Name) (xml.Attr, error) {
 	}, nil
 }
 
-// DateTime represents a date with time
+// DateTime represents a date with time component
 type DateTime time.Time
 
 // MarshalText renders conformance to Marshal protocol
