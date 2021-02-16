@@ -12,12 +12,15 @@ const (
 // Config represents configuration that is used by efi modules
 type Config struct {
 	// Company details
-	TIN     string `json:"TIN"`
-	Name    string `json:"Name"`
-	VAT     string `json:"VAT"`
-	Address string `json:"Address"`
-	Town    string `json:"Town"`
-	Country string `json:"Country"`
+	TIN         string `json:"TIN"`
+	Name        string `json:"Name"`
+	VAT         string `json:"VAT"`
+	Address     string `json:"Address"`
+	Town        string `json:"Town"`
+	Country     string `json:"Country"`
+	Phone       string `json:"Phone"`
+	Fax         string `json:"Fax"`
+	BankAccount string `json:"BankAccount"`
 	// Environment, eg staging or production
 	Environment EnvironmentType `json:"Environment"`
 	// EFI-related constants
